@@ -1,0 +1,37 @@
+.about-detail-box {
+  width: 851px;
+  border-radius: 26px;
+  border: 1.291px solid rgba(216, 216, 216, 0.5);
+  background: var(--white-stroke, #f2f2f2);
+  padding: 15px;
+  margin: 15px 0;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    &_logo {
+      width: 44.636px;
+      height: 44.636px;
+      border-radius: 54.36px;
+      background: var(--Button-green, #4bae4f);
+    }
+
+    &_title {
+      color: var(--2d-black, #2d2d2d);
+      font-family: "Roobert PRO";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  &_description {
+    color: var(--gray-txt-btn, #757575);
+    font-family: "Roobert PRO";
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}

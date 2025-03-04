@@ -1,0 +1,17 @@
+.our-services {
+  &-title {
+    color: #2e303c;
+    font-family: "Roobert PRO";
+    font-size: 27.197px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 70px;
+  }
+
+  &-container {
+    display: inline-flex;
+    gap: 20px;
+  }
+}
