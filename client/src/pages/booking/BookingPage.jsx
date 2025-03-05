@@ -20,28 +20,31 @@ const BookingPage = () => {
       <form onSubmit={handleSubmit} className="booking-form">
         <div className="form-group">
           <h2 className="subtitle">Property Appraisal</h2>
-          <label>Select Date</label>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            required
-          />
+          <div className="section1">
+            <label>Select Date</label>
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              required
+            />
+          </div>
         </div>
         <div className="form-group">
-          <label>Select Time</label>
-          <input
-            type="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            required
-          />
+          <div className="section2">
+            <label>Select Time</label>
+            <input
+              type="time"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+              required
+            />
+          </div>
         </div>
         <div className="form-group">
           <label>Enter Name</label>
           <input
             type="text"
-            placeholder="Enter your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -51,7 +54,6 @@ const BookingPage = () => {
           <label>Enter Email</label>
           <input
             type="email"
-            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
