@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 85%;
+  margin: auto;
+}
+
+.background-color1 {
+  background: var(
+    --Blue-Gradient,
+    linear-gradient(99deg, #1e7ad4 4.47%, #abdaff 106.07%)
+  );
+
+  margin-right: 10px;
+}
+
+.background-color2 {
+  background: linear-gradient(93deg, #ff8126 1.81%, #ffa426 94.75%);
+}

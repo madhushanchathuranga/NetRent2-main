@@ -4,7 +4,9 @@ import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./pages/About/About";
 import Business from "./pages/Business/Business";
-import Residential from "./pages/Residential/Residential";
+import Residential from "./pages/Residential/residential";
+import Signup from "./pages/Signup/Signup";
+import Frame861 from "./pages/Frame861/Frame861";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/business" element={<Business />} />
           <Route path="/residential" element={<Residential />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/frame861" element={<Frame861 />} />
         </Routes>
       </div>
       <Footer />
