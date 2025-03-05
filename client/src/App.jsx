@@ -7,6 +7,7 @@ import Business from "./pages/Business/Business";
 import Residential from "./pages/Residential/residential";
 import Signup from "./pages/Signup/Signup";
 import Frame861 from "./pages/Frame861/Frame861";
+import BookingPage from "./pages/booking/BookingPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/residential" element={<Residential />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/frame861" element={<Frame861 />} />
+          <Route path="/bookingpage" element={<BookingPage />} />
         </Routes>
       </div>
       <Footer />
