@@ -1,5 +1,3 @@
-$font_roobert_pro: "Roobert PRO";
-
 .header {
   display: flex;
 
@@ -8,7 +6,7 @@ $font_roobert_pro: "Roobert PRO";
 
     &-text_1 {
       color: #31374f;
-      font-family: $font_roobert_pro;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 30px;
       font-style: normal;
       font-weight: 400;
@@ -18,7 +16,7 @@ $font_roobert_pro: "Roobert PRO";
     &-text_2 {
       color: #31374f;
       font-size: 54px;
-      font-family: $font_roobert_pro;
+      font-family: Arial, Helvetica, sans-serif;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -42,7 +40,7 @@ $font_roobert_pro: "Roobert PRO";
           justify-content: center;
           align-items: center;
           color: #fff;
-          font-family: $font_roobert_pro;
+          font-family: Arial, Helvetica, sans-serif;
           font-size: 35.962px;
           font-style: normal;
           font-weight: 700;
@@ -66,7 +64,7 @@ $font_roobert_pro: "Roobert PRO";
     &-text_3 {
       color: #31374f;
       font-size: 54px;
-      font-family: $font_roobert_pro;
+      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
       margin-left: 10px;
     }
