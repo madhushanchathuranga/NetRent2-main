@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roobert";
+  src: url("d6ae884b0a2f1a5346717fc160db2d28.eot");
+  src: url("d6ae884b0a2f1a5346717fc160db2d28.eot?#iefix")
+      format("embedded-opentype"),
+    url("d6ae884b0a2f1a5346717fc160db2d28.woff") format("woff"),
+    url("d6ae884b0a2f1a5346717fc160db2d28.woff2") format("woff2"),
+    url("d6ae884b0a2f1a5346717fc160db2d28.ttf") format("truetype"),
+    url("d6ae884b0a2f1a5346717fc160db2d28.svg#Roobert") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;

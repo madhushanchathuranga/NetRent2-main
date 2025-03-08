@@ -1,0 +1,35 @@
+.in-detail-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 100px 0px;
+
+  &_right {
+    width: 40%;
+    &_title {
+      color: #31374f;
+      font-family: "Roobert PRO";
+      font-size: 32.532px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    &_description {
+      margin-top: 20px;
+      color: #000;
+      font-family: "Roobert PRO";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  &_left {
+    img {
+    }
+  }
+}

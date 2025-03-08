@@ -1,0 +1,107 @@
+$font_roobert_pro: "Roobert PRO";
+
+.header {
+  display: flex;
+
+  &-left {
+    padding-top: 100px;
+
+    &-text_1 {
+      color: #31374f;
+      font-family: $font_roobert_pro;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-text_2 {
+      color: #31374f;
+      font-size: 54px;
+      font-family: $font_roobert_pro;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 29px;
+    }
+
+    &-dollar {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 29px;
+
+      &-sign {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        border-radius: 26.586px;
+        padding: 12px;
+
+        &-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-family: $font_roobert_pro;
+          font-size: 35.962px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        &-symbol {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          color: #fff;
+          border: 4px solid #fff;
+          border-radius: 50%;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &-text_3 {
+      color: #31374f;
+      font-size: 54px;
+      font-family: $font_roobert_pro;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    &-find {
+      position: relative;
+      width: 621px;
+      height: 56px;
+      margin-top: 60px;
+
+      input {
+        width: 100%;
+        height: 56px;
+        border-radius: 28px;
+        border: 0.827px solid #fff;
+        background: rgba(217, 217, 217, 0.2);
+        padding-left: 20px;
+      }
+
+      button {
+        position: absolute;
+        right: 16px;
+        top: 15%;
+        width: 145px;
+        height: 40px;
+        border-radius: 30.5px;
+        color: #fff;
+        background-color: #31374f;
+      }
+    }
+  }
+
+  &-right {
+    img {
+      margin-top: 100px;
+    }
+  }
+}

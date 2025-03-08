@@ -18,7 +18,6 @@
 
     &_title {
       color: var(--2d-black, #2d2d2d);
-      font-family: "Roobert PRO";
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
@@ -29,9 +28,9 @@
 
   &_description {
     color: var(--gray-txt-btn, #757575);
-    font-family: "Roobert PRO";
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bolder;
     text-transform: capitalize;
   }
 }

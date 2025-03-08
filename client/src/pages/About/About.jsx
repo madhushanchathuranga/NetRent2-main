@@ -40,8 +40,10 @@ function About() {
         <div className="about_header_heading">
           <div className="about_header_heading_title">About</div>
           <div className="about_header_heading_subtitle">
-            <p>NetRent</p>
-            <p>Properties</p>
+            <p>
+              NetRent<br></br>
+              Properties
+            </p>
           </div>
         </div>
 

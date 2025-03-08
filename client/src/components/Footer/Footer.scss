@@ -25,7 +25,7 @@ $color: #31374f;
     &_left {
       &_title {
         color: #fff;
-        font-family: "Roobert PRO";
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -36,7 +36,7 @@ $color: #31374f;
         width: 488px;
         height: 60px;
         color: #fff;
-        font-family: "Roobert PRO";
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
@@ -52,7 +52,7 @@ $color: #31374f;
         &_contact {
           &_title {
             color: #fff;
-            font-family: "Roobert PRO";
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
@@ -61,10 +61,11 @@ $color: #31374f;
 
           &_menu {
             list-style-type: none;
+            text-align: left;
 
             &_item {
               color: #fff;
-              font-family: "Roobert PRO";
+              font-family: Arial, Helvetica, sans-serif;
               font-size: 14px;
               font-style: normal;
               font-weight: 500;
@@ -86,12 +87,13 @@ $color: #31374f;
           gap: 5px;
 
           img {
+            height: 50px;
             opacity: 0.3;
           }
 
           &_count {
             color: #fff;
-            font-family: "Roobert PRO";
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
@@ -100,7 +102,7 @@ $color: #31374f;
 
           &_text {
             color: #fff;
-            font-family: "Roobert PRO";
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-style: normal;
             font-weight: 500;
@@ -113,7 +115,7 @@ $color: #31374f;
         margin-top: 60px;
         &_text {
           color: #fff;
-          font-family: "Roobert PRO";
+          font-family: Arial, Helvetica, sans-serif;
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
