@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-const User = require('../models/UserModel');
+const User = require('../models/User');
 const generateToken = require('../utils/generateToken');
 
 // Sign in with email or phone
