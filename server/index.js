@@ -1,28 +1,24 @@
-// mongodb+srv://admin:admin123@cluster0.ocncl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+require('dotenv').config('./.env')
 
-const express = require('express')
-const connectDB = require('./db.js')
+const express = require('express');
+const cors = require('cors');
+const connectDB = require('./connectDB.js');
+const userRoutes = require('./routes/userRoutes.js');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 
-connectDB();
+connectDB(); // Connect to MongoDB
+console.log(process.env.MONGO_URI);
 
-// Middleware to parse JSON data
-app.use(express.json());
-// Middleware to parse URL-encoded data
-app.use(express.urlencoded({ extended: true }));
 
-// Test Route
-app.get('/', (req, res) => {
-    res.send('API is running...');
-});
+app.use(express.json()); // Add this to parse incoming JSON requests
+app.use(cookieParser());
+app.use(cors());
 
-app.post('/', (req, res) => {
-    console.log(req.body); // Logs the incoming data to the console
-    res.json({ message: 'Data received!', data: req.body });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Your server is running on port ${PORT}`);
 });
 
 
-app.listen(3000, () => {
-    console.log("app is running");
-});
