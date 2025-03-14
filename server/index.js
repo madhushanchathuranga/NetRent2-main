@@ -1,5 +1,4 @@
 // mongodb+srv://admin:admin123@cluster0.ocncl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-import apiRoutes from './routes/api.js';
 const routes = require('./routes/Routes.js');
 
 
@@ -17,13 +16,8 @@ app.use(express.json());
 // Middleware to parse URL-encoded data
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors());
-app.use(express.json());
-app.use('/api', apiRoutes);
 
-const apiRouter = require('./routes/api');
-app.use('/api', apiRouter);
-// Test Route
+
 app.get('/', (req, res) => {
     res.send('API is running...');
 });
