@@ -9,6 +9,7 @@ const userRoutes = require('./routes/userRoutes.js');
 const cookieParser = require('cookie-parser');
 const passport = require('passport');
 const session = require('express-session');
+const agentRoutes = require('./routes/agentRoutes.js'); // Import agent route
 
 require('./config/passport'); // Load Passport config
 
@@ -28,6 +29,8 @@ app.use(passport.session());
 app.get('/auth/google',
     passport.authenticate('google', { scope: ['profile', 'email'] })
 );
+
+app.use('/api/agents', agentRoutes); // Add agent route
 
 app.get(
     '/auth/google/callback',
