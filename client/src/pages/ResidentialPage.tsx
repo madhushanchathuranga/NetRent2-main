@@ -410,7 +410,10 @@ const ResidentialPage = () => {
             </div>
 
             <div
-              onClick={() => setActiveTab(1)}
+              onClick={() => {
+                setActiveTab(1);
+                navigate("/commercial");
+              }}
               className={`w-full sm:w-[176px] h-[80px] sm:h-[64px] bg-gradient-to-l gap-3 group cursor-pointer ${
                 activeTab === 1
                   ? "to-[#FE8930] from-[#FFB05F]"
