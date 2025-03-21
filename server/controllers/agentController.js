@@ -5,14 +5,21 @@ const Agent = require('../models/AgentModel');
 // @access Public
 const registerAgent = async (req, res) => {
     const {
-        licenseNumber,
-        email,
+        name,
         phoneNumber,
+        email,
+        licenseNumber,
         aboutMe,
         socialMedia,
         serviceProposal,
         marketingProposal,
-        serviceFee
+        serviceFee,
+        profilePicture,
+        totalSold,
+        totalRented,
+        totalSelected,
+        views,
+        rating
     } = req.body;
 
     try {
@@ -23,14 +30,21 @@ const registerAgent = async (req, res) => {
         }
 
         const agent = await Agent.create({
-            licenseNumber,
-            email,
+            name,
             phoneNumber,
+            email,
+            licenseNumber,
             aboutMe,
             socialMedia,
             serviceProposal,
             marketingProposal,
-            serviceFee
+            serviceFee,
+            profilePicture,
+            totalSold,
+            totalRented,
+            totalSelected,
+            views,
+            rating
         });
 
         if (agent) {
@@ -48,4 +62,20 @@ const registerAgent = async (req, res) => {
     }
 };
 
-module.exports = { registerAgent };
+// @desc Get agent details by ID
+// @route GET /api/agents/:id
+// @access Public
+const getAgentDetails = async (req, res) => {
+    try {
+        const agent = await Agent.findById(req.params.id);
+        if (!agent) {
+            return res.status(404).json({ message: 'Agent not found' });
+        }
+        res.status(200).json(agent);
+    } catch (error) {
+        console.error(`Error: ${error.message}`);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+module.exports = { registerAgent, getAgentDetails };
