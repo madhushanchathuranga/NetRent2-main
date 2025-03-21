@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const agentSchema = new mongoose.Schema(
     {
         licenseNumber: { type: String, required: true },
+        name: { type: String, required: true },
         email: { type: String, required: true, unique: true },
         phoneNumber: { type: String, required: true },
+        verified: { type: Boolean, default: false },
         aboutMe: { type: String },
         socialMedia: {
             facebook: { type: String },
@@ -15,11 +17,12 @@ const agentSchema = new mongoose.Schema(
         },
         serviceProposal: [{ type: String }],
         marketingProposal: [{ type: String }],
-        serviceFee: {
-            residential: { rent: Number, sale: Number },
-            commercial: { lease: Number, sale: Number },
-            business: { sale: Number }
-        }
+        profilePicture: { type: String },
+        totalSold: { type: Number, default: 0 },
+        totalRented: { type: Number, default: 0 },
+        totalSelected: { type: Number, default: 0 },
+        views: { type: Number, default: 0 },
+        rating: { type: Number, default: 0 },
     },
     { timestamps: true }
 );
