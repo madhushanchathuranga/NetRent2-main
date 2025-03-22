@@ -18,6 +18,7 @@ dist-ssr
 
 #Environment files
 server/.env
+config.env
 
 # Editor directories and files
 .vscode/*
