@@ -1,9 +1,10 @@
 
-const express = require('express');
-const { registerAgent } = require('../controllers/agentController');
 
 const router = express.Router();
 
-router.post('/', registerAgent); // POST request to register a new agent
+router.post("/create", createAgent); // ✅ Route for creating an agent
+
+// ✅ Get a Single Agent by ID
+router.get("/:licenseNumber", getAgentById);
 
 module.exports = router;
