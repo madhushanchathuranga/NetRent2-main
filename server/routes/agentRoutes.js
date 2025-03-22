@@ -3,7 +3,7 @@ const { createAgent, getAgentById } = require("../controllers/agentController");
 
 const router = express.Router();
 
-router.post("/create", createAgent); // ✅ Route for creating an agent
+router.post("/register", createAgent); // ✅ Route for creating an agent
 
 // ✅ Get a Single Agent by ID
 router.get("/:licenseNumber", getAgentById);
